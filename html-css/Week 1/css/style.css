@@ -1,51 +1,97 @@
-body{
-    text-align: justify;
+body {
+  text-align: justify;
 }
-h1{
-    font-size: 30px;
+
+h1 {
+  font-size: 30px;
 }
+
 h2 {
-    font-size: 20px;
-    color: rgb(0, 115, 128);
+  font-size: 20px;
+  color: rgb(0, 115, 128);
 }
 
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
 }
-.bio {
-    margin: auto;
-    width: 50%;
-    border: 3px solid rgb(0, 115, 128);
-    padding: 20px;  
+
+#bio {
+  margin: auto;
+  width: 40%;
+  padding: 25px;
 }
+
 .header-bio {
-    text-align: left;
-    padding-bottom: 3%;
+  text-align: left;
+  display: inline-block;
+  position: relative;
 }
+
 .cv-picture {
-    float: right;
-    border-radius: 50%;
-    width: 25%;
+  position: absolute;
+  border-radius: 50%;
+  width: 17%;
+  top: 60px;
+  left: 60px;
 }
-.icons{
-    padding-right: 20px;
-    color: rgb(0, 115, 128);
+
+.statement {
+  border-top: 2px solid rgb(0, 115, 128);
 }
+
+.icons {
+  padding-right: 10px;
+  color: rgb(0, 115, 128);
+}
+
 .segment {
-    border-top: 3px solid rgb(0, 115, 128);
-    padding: 10px 0 40px 0; 
+  margin: auto;
+  width: 40%;
+  border-top: 2px solid rgb(0, 115, 128);
+  padding: 30px;
 }
- .date {
-    position: absolute;
-    right: 25%;
- }
- .publication {
-     padding-top: 5px;
- }
+
+#skills {
+  position: absolute;
+  bottom: 9%;
+  background-color: rgb(240, 252, 253);
+  width: 26%;
+}
+
+.aside-segment {
+  margin: auto;
+  width: 40%;
+  border-top: 3px thin dashed rgb(0, 115, 128);
+  padding: 65px 20px 40px 0;
+}
+
+#strategies {
+  position: absolute;
+  top: 85%;
+  background-color: rgb(240, 252, 253);
+  width: 26%;
+}
+
+.date {
+  position: absolute;
+  right: 30%;
+}
+
+.publication {
+  padding-top: 10px;
+}
 
 a {
-    text-decoration: none;
-    color: rgb(0, 115, 128);
+  text-decoration: none;
+  color: rgb(0, 115, 128);
+}
+
+footer {
+  margin: auto;
+  width: 45%;
+  border-top: 2px solid rgb(0, 115, 128);
+  text-align: center;
+  padding-top: 40px;
 }
