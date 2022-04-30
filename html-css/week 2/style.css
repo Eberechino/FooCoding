@@ -80,7 +80,7 @@ background-color: rgb(162, 229, 241);
      display: grid;
      grid-template-columns: repeat(4, 25%);
      gap: 1.8em;
- }
+    }
 
  #grid-floats li:nth-child(1){
      border-style: dashed;
@@ -96,13 +96,12 @@ background-color: rgb(162, 229, 241);
 
 /* flex */
 #grid-flex {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-row-gap: 1.8em;
-column-gap: 1.5em;
-width: 100%;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 1.8em;
+    column-gap: 1.5em;
+    width: 100%;
 }
 
 #grid-flex .grid-item {
@@ -114,12 +113,13 @@ width: 100%;
 #grid-flex li:first-child{
     flex: 50%;
     border-style: dashed;
-        border-width: 2px;
+    border-width: 2px;
 }
 
 #grid-flex li:first-child img {
     height: 350px;
 }
+
 #grid-flex li:second-child{
     flex: 25%;
 }
@@ -130,51 +130,41 @@ width: 100%;
     flex: 99999 1 auto;
 }
 
-/* responsive */
+/*responsive- phone */
 @media screen and (max-device-width: 480px) and (orientation: portrait){
     #grid-flex .grid-item {
-        flex: 50%;
+        flex: 33.5%;
+        height: auto;
     }
-    
-    #grid-flex li:first-child{
+
+    @keyframes work {
+        to {background-color: powderblue;}
+    }
+
+     #grid-flex li:first-child {
         flex: 100%;
       
     }
-        #grid-floats li:nth-child(1){
-        grid-column: 1/ span 3;
-       
-     }
-    
-     #grid-floats li:nth-child(1)img {
-         height: 200px;
-     }
-}
 
-
-@media screen and (max-device-width: 768px) and (orientation: portrait){
-    
     #grid-floats {
-        grid-column: 1 / span 4;
-      }
-
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 1.8em;
     }
-    #grid-floats li:nth-child(1){
-        grid-column: 1/ span 3;}
-
-    
-    
-    
-    #grid-flex .grid-item {
-        flex: 33.3%;
-
-    }
-    
-
-    #grid-flex li:first-child{
-        flex: 50%;
-        height: 500px;
-      
-    }
-    
-   
 }
+
+
+    /* responsive -tablet */
+
+    @media screen and (min-device-width: 768px) and (orientation: portrait){
+        #grid-floats {
+        display: grid;
+        grid-template-columns: repeat(3, 33.3%);
+        gap: 1.8em;
+        }
+
+        #grid-floats li:nth-child(1){
+            grid-template-columns: repeat(2, 50%);
+            gap: 1.8em;
+     }
+    }
