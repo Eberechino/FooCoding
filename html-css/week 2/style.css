@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: floralwhite;
+    text-align: center;
+}
+header {
+ margin-bottom: 15px;
+ height: 35px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: darkblue;
+    color: white;
+    padding-top: 10px;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom:  20px;
+    color: blue;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: navy;
+}
+
+#grid-flexh2 {
+    background-color: darkblue;
+    padding-top: 10px;
+}
+
+main {
+    display: grid;
+}
+
+section {
+    padding: 2%;
+}
+img {
+    display: block;
+    width: 100%;
+    background-color: white;
+}
+
+.grid-item {
+    border: 1px;
+    width: auto;
+    border-color: beige;
+    border-style: dashed;
+    list-style: none;
+    padding: 10px;
+    justify-items: center;
+}
+
+.grid-item:hover{
+background-color: beige;
+}
+
+/* grid */
+
+#grid-floats{
+     display: grid;
+     grid-template-columns: repeat(4, 25%);
+     justify-content: space-between;
+     gap: 1em;
+ }
+ #grid-floats .grid-items{
+  border-top: 40px;
+ }
+ #grid-floats li:nth-child(1){
+    grid-column: 1/3;
+   
+ }
+
+ #grid-floats li:nth-child(1)img {
+     height: 200px;
+ }
+
+/* flex */
+#grid-flex {
+display: flex;
+flex-wrap: wrap;
+flex-grow: 1;
+
+}
+
+#grid-flex .grid-item {
+    flex: 25%;
+   
+}
+#grid-flex li:first-child{
+    flex: 50%;
+}
+
+#grid-flex li:first-child img {
+    height: 300px;
+}
+
+#grid-flex img {
+    height: 180px;
+}
+
+/* responsive */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    #grid-flex .grid-item {
+        flex: 50%;
+    }
+    
+    #grid-flex li:first-child{
+        flex: 100%;
+      
+    }
+
+    #grid-floats li:nth-child(1){
+        grid-column: 3/3;
+       
+     }
+    
+     #grid-floats li:nth-child(1)img {
+         height: 200px;
+     }
+}
+
+
+@media screen and (max-device-width: 768px) and (orientation: portrait){
+    #grid-flex .grid-item {
+        flex: 33%;
+
+    }
+    #grid-flex li:first-child{
+        flex: 50%;
+      
+    }
+
+    #grid-floats li:nth-child(1){
+        grid-column: 3/3;}
+        
+}
