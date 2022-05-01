@@ -114,11 +114,6 @@ background-color: rgb(162, 229, 241);
 }
 
 
-#grid-flex:after {
-    content: "";
-    flex: auto;
-}
-
 /*responsive- phone */
 @media screen and (max-device-width: 480px) and (orientation: portrait){
     #grid-flex .grid-item {
