@@ -100,7 +100,7 @@ background-color: rgb(162, 229, 241);
 }
 
 #grid-flex .grid-item {
-    flex: 23%;
+    flex: 0 1 23%;
     gap: 1em;
     flex-grow: 0 1 50%;
 }
