@@ -113,10 +113,6 @@ background-color: rgb(162, 229, 241);
     border-width: 2px;
 }
 
-#grid-flex li:first-child img {
-    height: 350px;
-}
-
 #grid-flex li:second-child{
     flex: 25%;
 }
