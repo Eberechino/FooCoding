@@ -96,7 +96,6 @@ background-color: rgb(162, 229, 241);
     justify-content: space-around;
     row-gap: 1.8em;
     column-gap: 1.5em;
-    width: 100%;
     flex-grow: 0;
 }
 
