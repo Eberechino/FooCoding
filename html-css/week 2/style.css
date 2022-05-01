@@ -124,7 +124,7 @@ background-color: rgb(162, 229, 241);
 
 #grid-flex:after {
     content: "";
-    flex: 99999 1 auto;
+    flex: auto;
 }
 
 /*responsive- phone */
