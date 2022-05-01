@@ -87,7 +87,6 @@ background-color: rgb(162, 229, 241);
      border-width: 2px;
     grid-column: 1/3;
     width: 100%;
-    height: 450px;
  }
 
  #grid-floats li:nth-child(1) img {
@@ -107,8 +106,6 @@ background-color: rgb(162, 229, 241);
 #grid-flex .grid-item {
     flex: 23%;
     gap: 1em;
-    height: 450px;
-   
 }
 #grid-flex li:first-child{
     flex: 50%;
