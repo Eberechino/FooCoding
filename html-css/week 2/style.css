@@ -111,7 +111,7 @@ background-color: rgb(162, 229, 241);
 }
 
 #grid-flex li:second-child{
-    flex: 25%;
+    flex: 0 1 25%;
 }
 
 
