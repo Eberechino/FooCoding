@@ -101,6 +101,7 @@ background-color: rgb(162, 229, 241);
     row-gap: 1.8em;
     column-gap: 1.5em;
     width: 100%;
+    flex-grow: 0;
 }
 
 #grid-flex .grid-item {
@@ -121,7 +122,6 @@ background-color: rgb(162, 229, 241);
 #grid-flex:after {
     content: "";
     flex: auto;
-    flex-grow: 0;
 }
 
 /*responsive- phone */
