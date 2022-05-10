@@ -95,7 +95,7 @@ if (typeof stringType === booleanType) {
   console.log("NOT THE SAME TYPE");
 }
 
-// Using the modulus operator to figure out the remainder of a division
+9; // Using the modulus operator to figure out the remainder of a division
 let seven = 7;
 seven = seven % 3;
 console.log(seven);
