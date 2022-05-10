@@ -103,7 +103,7 @@ console.log(seven);
 console.log("Seven is divided by 3");
 console.log("The % modulus returns the remainder left over after division");
 console.log(
-  "Since 7 divided by 3 gives you 2 with a remainder of 1, the output is 1"
+  "Since 7 divided by 3 gives a remainder of 1, the output is 1"
 );
 
 10; // Write a program to answer the following questions
