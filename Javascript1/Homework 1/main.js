@@ -97,14 +97,17 @@ if (typeof stringType === booleanType) {
 
 9; // Using the modulus operator to figure out the remainder of a division
 let seven = 7;
-seven = seven % 3;
-console.log(seven);
+console.log(seven % 3);
 // explanation of the modulus/remainder operator
 console.log("Seven is divided by 3");
 console.log("The % modulus returns the remainder left over after division");
 console.log(
   "Since 7 divided by 3 gives a remainder of 1, the output is 1"
 );
+//
+console.log(seven % 4)
+console.log(5 % 3)
+console.log(7 % 2)
 
 10; // Write a program to answer the following questions
 let programArray = [1, 5, " unknown"];
