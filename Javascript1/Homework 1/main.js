@@ -117,9 +117,8 @@ console.log(
   `As shown: ${programArray}, it is possible to store multiple types in an array.`
 );
 // compare infinities
-let compareInfinities = 6 / 10 === 10 / 0;
+let compareInfinities = 6 / 10 !== 10 / 0;
 console.log(
   "The program shows that the values are not the same hence, the test produces: " +
-    compareInfinities +
-    " output"
+    compareInfinities 
 );
