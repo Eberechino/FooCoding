@@ -74,10 +74,46 @@ vehicle('blue', 1, 5)
 
 // Make a list of vehicles, you can add "motorbike", "caravan", "bike", or more.
 
-let vehicleList = [ "motorbike", "caravan", "bike", "trucks", "trains"]
+let vehicleList = [ "motorbike", "caravan", "bike", "truck", "train"]
 
 /* 8 */
 
 //How do you get the third element from that list?
 
 vehicleList[vehicleList.length - 3] //access bike in the vehicleList array by specifying the index number of the position in the array using .length.
+
+
+/* 9 */
+function vehicle(color, age, vehicleType){
+if (age <= 2){
+    return console.log ('a ' + color + ' used ' + vehicleList[vehicleType])
+}
+if (age >= 3 && age <= 5){
+    return console.log ('a ' + color + ' new ' + vehicleList[vehicleType])
+}
+}
+vehicle('green', 3, 1)
+
+/* 10 */
+
+function vehicleAd() {
+  let adMessage = "Amazing Joe's Garage, we service ";
+
+  for (let i = 0; i <= vehicleList.length - 1; i++) {
+    adMessage += vehicleList[i] + 's'
+    
+    if (i === vehicleList.length -1) {
+        adMessage += '.'
+    }
+    else if (i === vehicleList.length -2) {
+        adMessage += ' and '
+    }
+    else{
+        adMessage += ', '
+    }
+  }
+  return  adMessage
+}
+vehicleAd()
+
+/* 11 */
